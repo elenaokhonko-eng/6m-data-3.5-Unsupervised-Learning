@@ -6,7 +6,7 @@
 <title>L05 — Unsupervised Learning · Key Concepts · NTU SCTP</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght,300;0,400;0,600;0,700;1,400&family=JetBrains+Mono:wght;500;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;1,400&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
 <style>
 :root{
   --ntu-navy:#1B2A4A;--ntu-dark:#1E3054;--ntu-blue:#2C5697;--ntu-blue-light:#3D6DB5;
@@ -19,11 +19,11 @@
   --teal:var(--ntu-blue);--teal-2:var(--ntu-blue-light);--mustard:#B45309;--grain-op:0;
 }
 *{box-sizing:border-box}
-html,body{margin:0;padding:0;background:var(--paper);color:var(--ink);font-family:'Open Sans',sans-serif;font-weight:380;font-size:18px;line-height:1.55;-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility}
+html,body{margin:0;padding:0;background:var(--paper);color:var(--ink);font-family:'Open Sans',sans-serif;font-weight:400;font-size:18px;line-height:1.55;-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility}
 body{background:var(--bg)}
 body::before{content:"";position:fixed;inset:0;pointer-events:none;z-index:60;mix-blend-mode:multiply;opacity:var(--grain-op);background-image:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='240' height='240'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='2' stitchTiles='stitch'/><feColorMatrix values='0 0 0 0 0.08 0 0 0 0 0.07 0 0 0 0 0.05 0 0 0 0.18 0'/></filter><rect width='100%25' height='100%25' filter='url(%23n)'/></svg>")}
 ::selection{background:var(--accent);color:var(--paper)}
-.italic{font-style:italic;}
+.italic{font-style:italic;font-size:11px;letter-spacing:.22em;text-transform:uppercase;color:var(--ink-2)}
 .label{font-family:"JetBrains Mono",ui-monospace,monospace;font-size:11px;letter-spacing:.22em;text-transform:uppercase;color:var(--ink-2)}
 .mono{font-family:"JetBrains Mono",ui-monospace,monospace}
 .rule-dot{border:0;border-top:1.5px dotted var(--rule);margin:0}
@@ -33,7 +33,7 @@ body::before{content:"";position:fixed;inset:0;pointer-events:none;z-index:60;mi
 .masthead-title{color:#fff!important}
 .masthead-title strong,.masthead-title .italic{color:var(--ntu-crimson)}
 .masthead-row{display:flex;align-items:flex-end;justify-content:space-between;gap:24px;flex-wrap:wrap}
-.masthead-title{font-family:'Open Sans',sans-serif;font-weight:340;font-style:italic;font-size:clamp(34px,5vw,56px);letter-spacing:-.03em;line-height:.85}
+.masthead-title{font-family:'Open Sans',sans-serif;font-weight:300;font-size:clamp(1.6rem,3vw,2.2rem);letter-spacing:-.01em;line-height:1.15;color:#fff}.masthead-title strong{color:var(--ntu-crimson);font-weight:700}
 .masthead-title sup{font-size:.4em;vertical-align:super;letter-spacing:0;font-style:normal;color:var(--accent)}
 .tag{display:inline-block;padding:3px 8px;background:var(--ink);color:var(--paper);font-family:"JetBrains Mono",monospace;font-size:10px;letter-spacing:.18em;text-transform:uppercase}
 .dateline{font-family:"JetBrains Mono",monospace;font-size:11px;letter-spacing:.16em;text-transform:uppercase;color:var(--ink-2)}
